@@ -1,0 +1,53 @@
+.header {
+  display: inline-flex;
+  align-items: center;
+  position: fixed;
+  padding-top: 2vmax;
+}
+@media (max-width: 1024px) {
+  .header,
+  .header:active {
+    display: block;
+    position: absolute;
+    padding: 20px;
+    background: gray;
+    opacity: 0.9;
+    left: 0px;
+    top: 35px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
+  }
+}
+.headerLeft {
+  position: fixed;
+  left: 50px;
+  background: gray;
+  padding: 1vmax;
+}
+.headerRight {
+  position: fixed;
+  right: 0px;
+  background: gray;
+  padding: 1vmax;
+}
+.headerRight .phone,
+.callme {
+  left: 70px;
+  display: inline-flex;
+}
+.callme {
+  background: #ffd155;
+  border-radius: 56px;
+}
+.headerRight .phone {
+  padding-right: 2vmax;
+}
+
+.headerLeft .logo,
+.link1,
+.link2,
+.link3,
+.link4 {
+  display: inline;
+  padding-left: 5vmax;
+}

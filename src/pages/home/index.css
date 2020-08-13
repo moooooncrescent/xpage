@@ -1,0 +1,49 @@
+.homepage {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+  grid-template-rows: auto 200px auto;
+
+  grid-row-gap: 2px;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 1024px) {
+  .homepage {
+    display: block;
+    grid-template-areas:
+      "header"
+      "body"
+      "footer";
+    grid-template-rows: 80px 1fr 70px;
+    grid-template-columns: 1fr;
+  }
+}
+.photo1 {
+  background: grey;
+  width: 400px;
+  height: 300px;
+  right: 0px;
+  position: absolute;
+}
+.firstParagraphH1 {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 360px;
+  top: 304px;
+
+  font-family: Gotham Pro;
+  font-size: 40px;
+  line-height: 120%;
+  /* or 48px */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
